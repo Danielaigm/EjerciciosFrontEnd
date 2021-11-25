@@ -4,19 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>practicaHEROES</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/9cd9f53be2.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-
+        <div>
+            <p>20% de descuento</p>
+        </div>
     </header>
-    <main>
-        <h1>LOGIN</h1>
+    <div class="barra">
+        <img class="compu" src="/img/OBJECTS.png" alt="">
+        <h1>Card Super Heroes</h1>
+    </div>
+    <main class="log">
         
+        <div class="login">
+            <form action="/index.html">
+                    <h2>Login</h2>
+                    <label for="Usuario"></label>
+                    <input type="email" name="usuario" required placeholder="Usuario" id="email">
     
+                    <label for="Contraseña"></label>
+                    <input type="password" name="pass" required placeholder="Contraseña">
+                    <div>
+                        <button type="submit" class="entrar">Entrar</button>
+                    </div>
+                </form>
+        </div>
     </main>
     <footer>
-
+        <p>Todos los derechos reservados a <span>FrontEnd 1</span></p>
+        <img src="/img/github.png">
     </footer>
 </body>
 </html>

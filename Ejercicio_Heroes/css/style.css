@@ -1,31 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Nunito:wght@200&family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Karla&family=Roboto&display=swap');
 
 * {
     box-sizing: border-box;
     margin: 0;
     font-family: Roboto;
+   /*  flex-wrap: wrap; */
+}
+html{
+    font-size: 17px;
 }
 
 header div p {
-    background-color: 
-    #D1891C;
+    background: #1CD1B0;
     padding: 2px 0px 2px 10px;
     font-size: 15px;
 }
-/* body {
-    height: 1000px;
-} */
-h1 {
+.barra{
     background-color: #00669F;
     color: white;
-    box-shadow: 0px 10px 7px 0px #00000040; 
-    padding: 10px 0px 10px 20px;
+   /*  box-shadow: 0px 10px 7px 0px #00000040;  */
+    padding: 10px 0px 10px 0px;
     position: sticky;
     top:0;
     height:60px;
     z-index: 10;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
+.compu {
+width: 80px;
+height: 60px; 
+}
+.mas{
+    position: fixed; 
+    top:50%; 
+    right: 0;
+    background-color:#00669F; 
+    border-radius: 50%; 
+    width: 82px;
+    height: 82px;
+    font-size: 3rem; 
+    color: white; 
+    font-weight: bolder;
+    z-index: 15;
+    margin: none;
+
+}
+div nav{
+    background-color: black;
+    display: flex;
+    align-items: center; 
+    justify-content: flex-end;
+}
+div nav ul{
+    display: flex;
+}
+div nav ul li {
+    color: white;
+    list-style-type: none;
+    margin-left: 30px;
+    margin-right: 10px;
+    padding: 5px 0px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
 section {
     display: flex;
     justify-content: space-evenly;
@@ -41,7 +85,7 @@ section article{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.fa-heart{
+article div i{
     color: red;
     font-size: 24PX;
     padding-left: 10px;
@@ -57,34 +101,40 @@ article div.bg-card {
 
 article div.bg-card.batman1{
     background-image: url(../img/fondobatman.png);
+    background-size: cover;
 
 }
 article div.bg-card.harley{
     background-image: url(../img/fondoharley.png);
+    background-size: cover;
 }
 article div.bg-card.superman{
     background-image: url(../img/fondosm.png);
+    background-size: cover;
 }
 article div.bg-card.wonderwoman{
     background-image: url(../img/fondoww.png);
+    background-size: cover;
 }
 .profile{
     position: absolute;
-    top:126px;
-    left:90px;
-    right:90px;
+    left: calc( 50% - (125px / 2));
+    top: calc( 194px - (125px /2) );
+    width: 125px;
     border-radius: 50%;
-    width: 118px;
-    height: 120px;
 }
 h3{
     font-weight: bold;
     padding-top: 60px;
-    font-size: 30px;
+    font-size: 1.2rem;
+    margin-top: 30px;
+
 }
 article p{
-    padding: 10px;
+    font-size: 0.8rem;
+    height: 190px;
     text-align: left;
+    margin: 10px 10px;
 }
 .boton{
     background-color: #00669F;
@@ -95,26 +145,124 @@ article p{
     margin: 18px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-footer{
-    background-color: #00669F;
-    padding: 30px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+footer {
+    position: relative;
+    padding: 30px 0;
+    background: #00669f;
     color: white;
-
-
     display: flex;
     justify-content: center;
     align-items: center;
-}
-footer img {
-    position: absolute;
-    right: 20px;
-    width: 100px;
+    bottom: 0%;
 }
 
+footer img {
+    position: absolute;
+    right: 25px;
+    width: 100px;
+}
 
 @media screen and (max-width: 480px) {
     .card4 {
         display: none;
     }
+}
+@media (max-width: 1300px) {
+    section article{
+    width: 45%;
+    }
+}
+
+
+@media (max-width: 760px) {
+    section article{
+    width: 90%;
+    max-width: 400px;
+    }
+}
+
+/* login */
+h2{
+    text-align: left;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    margin-bottom: 50px;
+}
+div.login  {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0px;
+    text-align: center;
+} 
+div.login form{
+    display: flex;
+    flex-direction: column;
+}
+input[type=email]{
+    width: 620px;
+    Height:60px;
+}
+input[type=password]{
+    width: 620px;
+    Height:60px;
+    margin-top: 30px;
+}
+div button.entrar{
+    margin-top: 40px;
+    width: 614.25px;
+    height: 53.79px;
+    background: #1CD1B0;
+    border-radius: 23.011px;
+    cursor: pointer;
+    border: none;
+    font-family: karla;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+/* registro */
+div.registro  {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0px;
+    text-align: center;
+} 
+div.registro form{
+    display: flex;
+    flex-direction: column;
+}
+input[type=text]{
+    width: 620px;
+    Height:60px;
+    margin-bottom: 30px;
+}
+select[name=paises]{
+    width: 620px;
+    Height:60px;
+    margin-top: 30px;
+}
+div.bregistro{
+    display: flex;
+    justify-content: center;
+}
+
+div.bregistro button{   
+    width: 300px;
+    height: 53.79px;
+    border-radius: 23.011px;
+    border: none;
+    cursor: pointer;
+    margin-left: 30px;
+    margin-right: 10px;
+    font-family: karla;
+    font-weight: bold;
+    margin-bottom: 50px;
+    font-size: 1.2rem;
+}
+button.rsubmit{
+    background: #1CD1B0;
+}
+button.reset{
+    background-color: #888888;
 }
