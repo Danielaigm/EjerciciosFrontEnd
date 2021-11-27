@@ -6,107 +6,61 @@
     font-family: 'Roboto', sans-serif;
 }
 
-
-.comederos {
-    background-color: black;
-    color: white;
-
-    width: 100%;
-
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 15px;
-}
-
-.comederos p{
-    background-color: black;
-    color: white;
-    padding: 4px 4px 4px 90px;
-}
-
-
-.comederos nav ul{ 
-    list-style-type: none;
-
-    margin-right:60px;
-
-    width:250px;
-
+header div:nth-child(1){
+    padding: 4px 60px 4px 90px;
+    background-color: #222222;
+    color: #FBFAF6;
     display: flex;
-    justify-content: space-evenly;
-    
+    justify-content: space-between;
 }
-
-
-.menu{
+div span.arg{
+    margin-left: 10px;
+}
+header div.logo{
+    padding: 22px 0px;
+    color: #FBFAF6;
     background-color: #F0A83E;
-    color: white;
-    width: 100%;
-
-    padding:19px 40px 20px 40px;
-    
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
-
-.menu img{
-    height:30px;
-}
-
-.menu nav ul{
+header div.logo nav ul{
+    width: 500px;
     display: flex;
     justify-content: space-evenly;
-
-    width:600px;
-
     list-style-type: none;
-
-    font-size: 18px;
 }
 
-body{
-    background-repeat: no-repeat;
-}
-
-.banner{
+main section.banner{
+    height: calc(100vh - 101.200px);
     background-image: url('../img/bowl.png');
     background-size: cover; 
-    height: 700px;
 
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:flex-end;
+    justify-content: flex-end;
+    align-items:center; 
+}
+main section.banner div{
+    margin-right: 5%;
+    text-align: center;
 }
 
-.banner h2{
+main section.banner h2{
     background-color:white;
     padding:9px 10px 10px 10px;
-    margin-right:21px;
     margin-bottom:12px;
-
     font-weight: 400;
     font-size: 30px;
 }
 
-.banner p{
-    margin-right:105px;
+main section.banner p{
     margin-bottom:12px;
-
-
     font-weight: 400;
     font-size: 18px;
 }
-
-
-.banner button{
+main section.banner button{
     background-color: #F0A83E;
     width: 141px;
     height: 49px;
-    margin-right:127px;
-
     font-weight: 400;
     font-size: 16px;
     color: white;
